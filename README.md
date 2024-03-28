@@ -26,13 +26,31 @@
 
 ## Appointment types
 
-| Description        | single/group | Regularity | Example event name | Design V |
-| ------------------ | ------------ | ---------- | ------------------ | -------- |
-| day appointment    | single       | once       | TS1                | V3       |
-| day appointment    | single       | template   | TSS                | V3       |
-| day appointment    | single       | multiple   | TSM                | V1       |
-| day appointment    | group        |            | TG                 | V3       |
-| serial appointment | group        | temporary  | STG                | V2       |
-| serial appointment | singel       | temporary  | STS                | V2       |
-| serial appointment | group        | regular    | SRG                | V1       |
-| serial appointment | single       | regular    | SRS                | V1       |
+**Event types:**
+
+| Day/Serial | Single/Group | Type      | Key | Vx  | TimifyEventType                |
+| ---------- | ------------ | --------- | --- | --- | ------------------------------ |
+| day        | single       | once      | TS1 | V3  | DAY_APPOINTMENT                |
+| day        | single       | template  | TSS | V3  | DAY_APPOINTMENT                |
+| day        | single       | multiple  | TSM | V1  | INDEPENDENT_SERIAL_APPOINTMENT |
+| day        | group        |           | TG  | V3  | DAY_APPOINTMENT                |
+| serial     | group        | temporary | STG | V2  | CONNECTED_SERIAL_APPOINTMENT   |
+| serial     | singel       | temporary | STS | V2  | CONNECTED_SERIAL_APPOINTMENT   |
+| serial     | group        | regular   | SRG | V1  | INDEPENDENT_SERIAL_APPOINTMENT |
+| serial     | single       | regular   | SRS | V1  | INDEPENDENT_SERIAL_APPOINTMENT |
+
+Description:
+
+- **Day/Serial:** one day appointment or multiple days
+- **Single/Group:** Timify service type single or group
+- **Type:** once/template/multiple/temporary/regular
+- **Key:** part of the name of the bookign in Timify
+- **Vx:** design version in Figma
+- **TimifyEventType:** design version mapping to event type
+- **Design version mapping to TimifyEventType:**
+
+| Design V | TimifyEventType                |
+| -------- | ------------------------------ |
+| v1       | INDEPENDENT_SERIAL_APPOINTMENT |
+| v2       | CONNECTED_SERIAL_APPOINTMENT   |
+| v2       | DAY_APPOINTMENT                |
