@@ -1,0 +1,561 @@
+{
+    "id": "65e6df9f99ae5ef3170ec61f",
+    "externalId": "",
+    "type": "booking",
+    "title": "Course - B.B.1",
+    "notes": "",
+    "color": "#b26492",
+    "price": 0,
+    "date": "2024-11-20Z",
+    "duration": 60,
+    "durationBefore": 0,
+    "durationAfter": 0,
+    "durationsPattern": [
+        60
+    ],
+    "startDate": "2024-11-20T19:25:00Z",
+    "createdAt": "2024-03-05T09:02:24Z",
+    "createdBy": "Mindance",
+    "createdByUserId": "65afbcddf5937d9b1523519f",
+    "createdByScope": "COMPANY",
+    "updatedAt": "2024-03-05T09:02:24Z",
+    "updatedBy": null,
+    "updatedByUserId": null,
+    "updatedByScope": null,
+    "rescheduleUntil": "2024-11-19T19:25:00Z",
+    "reschedulingSecret": "548edccf-56e7-4b5e-83e0-5f9a66558b7b",
+    "companyName": "Company Admin - B",
+    "timestamp": "1709629344426",
+    "isOnlineBooking": false,
+    "isBookable": true,
+    "isCourse": true,
+    "isPaidOnlineWithStripe": false,
+    "isPaidOnlineWithPaypal": false,
+    "hasNotifyCustomers": true,
+    "hasNotifyResources": false,
+    "maxParticipants": 50,
+    "participants": 0,
+    "customers": [],
+    "singleCustomers": [],
+    "customfields": [],
+    "resources": [
+        {
+            "id": "65e6dd62b97889878bfad112",
+            "externalId": "1080",
+            "name": "Department - B.B",
+            "email": "",
+            "category": {
+                "id": "65e6da48abcab5a29f063b07",
+                "externalId": "subscriptions",
+                "internalId": "65e6da48abcab5a29f063aff",
+                "orderIndex": 3,
+                "name": "Subscriptions",
+                "isDefault": false,
+                "isDependency": false
+            }
+        }
+    ],
+    "serviceId": null,
+    "service": null,
+    "recurring": null,
+    "chainId": "65e6df9d99ae5ef3170ec5c6",
+    "chainedEvents": [
+        {
+            "date": "2025-02-26Z",
+            "startDate": "2025-02-26T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec62e",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-02-19Z",
+            "startDate": "2025-02-19T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec62d",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-02-12Z",
+            "startDate": "2025-02-12T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec62c",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-02-05Z",
+            "startDate": "2025-02-05T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec62b",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-01-29Z",
+            "startDate": "2025-01-29T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec62a",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-01-22Z",
+            "startDate": "2025-01-22T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec629",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-01-15Z",
+            "startDate": "2025-01-15T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec628",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-01-08Z",
+            "startDate": "2025-01-08T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec627",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2025-01-01Z",
+            "startDate": "2025-01-01T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec626",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-12-25Z",
+            "startDate": "2024-12-25T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec624",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-12-18Z",
+            "startDate": "2024-12-18T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec623",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-12-11Z",
+            "startDate": "2024-12-11T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec622",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-12-04Z",
+            "startDate": "2024-12-04T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec621",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-11-27Z",
+            "startDate": "2024-11-27T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec620",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-11-20Z",
+            "startDate": "2024-11-20T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61f",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-11-13Z",
+            "startDate": "2024-11-13T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61e",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-11-06Z",
+            "startDate": "2024-11-06T19:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61d",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-10-30Z",
+            "startDate": "2024-10-30T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61c",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-10-23Z",
+            "startDate": "2024-10-23T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec625",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-10-16Z",
+            "startDate": "2024-10-16T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61b",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-10-09Z",
+            "startDate": "2024-10-09T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec61a",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-10-02Z",
+            "startDate": "2024-10-02T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec619",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-09-25Z",
+            "startDate": "2024-09-25T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec618",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-09-18Z",
+            "startDate": "2024-09-18T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec617",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-09-11Z",
+            "startDate": "2024-09-11T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec616",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-09-04Z",
+            "startDate": "2024-09-04T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec615",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-08-28Z",
+            "startDate": "2024-08-28T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec614",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-08-21Z",
+            "startDate": "2024-08-21T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec613",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-08-14Z",
+            "startDate": "2024-08-14T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec612",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-08-07Z",
+            "startDate": "2024-08-07T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec611",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-07-31Z",
+            "startDate": "2024-07-31T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec610",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-07-24Z",
+            "startDate": "2024-07-24T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60f",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-07-17Z",
+            "startDate": "2024-07-17T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60e",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-07-10Z",
+            "startDate": "2024-07-10T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60d",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-07-03Z",
+            "startDate": "2024-07-03T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60c",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-06-26Z",
+            "startDate": "2024-06-26T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60b",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-06-19Z",
+            "startDate": "2024-06-19T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec60a",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-06-12Z",
+            "startDate": "2024-06-12T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec609",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-06-05Z",
+            "startDate": "2024-06-05T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec601",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-05-29Z",
+            "startDate": "2024-05-29T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec600",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-05-22Z",
+            "startDate": "2024-05-22T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec5ff",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-05-15Z",
+            "startDate": "2024-05-15T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec607",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-05-08Z",
+            "startDate": "2024-05-08T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec606",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-05-01Z",
+            "startDate": "2024-05-01T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec608",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-04-24Z",
+            "startDate": "2024-04-24T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec605",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-04-17Z",
+            "startDate": "2024-04-17T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec604",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-04-10Z",
+            "startDate": "2024-04-10T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec603",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-04-03Z",
+            "startDate": "2024-04-03T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec602",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-03-27Z",
+            "startDate": "2024-03-27T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec5fc",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-03-20Z",
+            "startDate": "2024-03-20T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec5fd",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-03-13Z",
+            "startDate": "2024-03-13T18:25:00Z",
+            "id": "65e6df9f99ae5ef3170ec5fe",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        },
+        {
+            "date": "2024-03-06Z",
+            "startDate": "2024-03-06T19:25:00Z",
+            "id": "65e6dfa499ae5ef3170ec662",
+            "externalId": null,
+            "type": "booking",
+            "title": "Course - B.B.1",
+            "notes": ""
+        }
+    ],
+    "isLastInTheChain": false,
+    "bookings": [
+        {
+            "id": "5252b7cfbf1098a72bddd512bc1f8bfd",
+            "startDate": "2024-11-20T19:25:00Z",
+            "interval": {
+                "begin": "2024-11-20T19:25:00Z",
+                "end": "2024-11-20T20:25:00Z"
+            },
+            "batchNumber": 0,
+            "isFirstBatch": true,
+            "isLastBatch": true,
+            "recurringDay": null,
+            "duration": 60,
+            "durationBefore": 0,
+            "durationAfter": 0,
+            "durationTotal": 60,
+            "resourceId": "65e6dd62b97889878bfad112"
+        }
+    ],
+    "tagIds": [],
+    "tags": [],
+    "combination": null,
+    "reservedUntil": null,
+    "metadata": {
+        "secret": "ac9ff3bc-d36c-4316-a5e8-974b7b6a9551"
+    },
+    "scheduledForDeletionAt": null,
+    "enterpriseId": "65aea871f011c03363aefdb3"
+}
