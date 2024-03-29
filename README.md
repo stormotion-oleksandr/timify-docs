@@ -90,7 +90,7 @@ Description:
 | Key | TimifyEventType                | Booking Type | onDays | slots | recurring | groupEvents | bookings | course  | isCourse | service | maxParticipants |
 | --- | ------------------------------ | ------------ | ------ | ----- | --------- | ----------- | -------- | ------- | -------- | ------- | --------------- |
 | TS1 | DAY_APPOINTMENT                | appointment  |        |       | null      | null        | 1        |         | true     | null    | 1               |
-| TSS | DAY_APPOINTMENT                | course       | 1      | 1     |           | 1           |          | != null |          |         | 15              |
+| TSS | DAY_APPOINTMENT                | course       | 1      | 1     |           | 1           |          | != null |          |         | 1               |
 | TSM | INDEPENDENT_SERIAL_APPOINTMENT | service      | 1...x  | 1...x |           |             |          |         |          | != null |                 |
 | TG  | DAY_APPOINTMENT                | appointment  |        |       | null      |             | 1        |         | true     | null    | 14              |
 | STG | CONNECTED_SERIAL_APPOINTMENT   | appointment  |        |       | != null   |             | 1...x    |         | true     | null    | 15              |
