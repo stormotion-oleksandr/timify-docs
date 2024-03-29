@@ -101,7 +101,7 @@ Description:
 **A way define TimifyEventType:**
 
 - service: `INDEPENDENT_SERIAL_APPOINTMENT`
-- course: `groupEvents.length === 1 ? DAY_APPOINTMENT : INDEPENDENT_SERIAL_APPOINTMENT`
+- course: `groupEvents[0].maxParticipants === 1 ? DAY_APPOINTMENT : INDEPENDENT_SERIAL_APPOINTMENT`
 - appointment: `recurring !== null ? CONNECTED_SERIAL_APPOINTMENT : DAY_APPOINTMENT`
 
 **TS function:**
@@ -126,7 +126,7 @@ export function defineTimifyEventType(
   if (bookingType === TimifyBookingType.SERVICE) {
     return TimifyEventType.INDEPENDENT_SERIAL_APPOINTMENT;
   } else if (bookingType === TimifyBookingType.COURSE) {
-    return data?.groupEvents?.length === 1
+    return data?.[0]?.maxParticipants === 1
       ? TimifyEventType.DAY_APPOINTMENT
       : TimifyEventType.INDEPENDENT_SERIAL_APPOINTMENT;
   } else if (bookingType === TimifyBookingType.APPOINTMENT) {

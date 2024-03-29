@@ -107,7 +107,7 @@ async function getAllCompanyData(
   company: Record<string, any>,
   companyRoot: string,
 ) {
-  const days = generateDays(7);
+  const days = generateDays(31);
 
   // Process services
   for (const service of company.data.companies[0].services) {
