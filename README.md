@@ -14,7 +14,7 @@ yarn dev --access-token access-token
 
 [company-admin-a.json](./companies/company-admin-a.json)
 
-````json
+```json
 {
   "id": "65c39ebd07a04b9210cccb7b",
   "externalId": "1082"
@@ -30,7 +30,7 @@ yarn dev --access-token access-token
   "id": "65ca2bb1c1020b3c67633b1a",
   "externalId": "1083"
 }
-````
+```
 
 ## Appointment types
 
