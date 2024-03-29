@@ -1,5 +1,13 @@
 # Timify DOCS
 
+## index.ts util
+
+How to run:
+
+```sh
+yarn dev --access-token access-token
+```
+
 ## Companies
 
 **Company Admin - A:**
