@@ -1,14 +1,19 @@
 import axios from "axios";
-import companyA from "../data/company-a/company-admin-a.json";
-import companyB from "../data/company-b/company-admin-b.json";
+import { mkdirp } from "mkdirp";
 import * as path from "path";
 import * as fs from "fs/promises";
 
-type Company = typeof companyA;
-
 const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoU2NvcGUiOiJBUFAiLCJ1c2VySWQiOiI2NWIyNzE5NjBhNzc4YmE4YTJmZjI3ZTUiLCJhY2NvdW50SWQiOmZhbHNlLCJyZWdpb24iOmZhbHNlLCJsb25nU2Vzc2lvbiI6ZmFsc2UsImxvbmdBY2Nlc3NUb2tlbkR1cmF0aW9uIjpmYWxzZSwidmVyc2lvbiI6Miwiand0SWQiOiI2NjA1YzdlYmUyMjU5MjMyN2E4OTYzMjEiLCJpYXQiOjE3MTE2NTQ4OTEsImV4cCI6MTcxMTY2MjA5MX0.-reVamu0Y96WEeSz5UhGSdLvCCSD-69vMk9XHhbmttw";
-const ROOT = path.join(__dirname, "..");
+  process.argv[process.argv.findIndex((arg) => arg === "--access-token") + 1];
+
+if (!ACCESS_TOKEN) {
+  throw new Error("Required --access-token argument");
+}
+
+export async function writeFile(path: string, content: Buffer) {
+  await mkdirp(path.substring(0, path.lastIndexOf("/")));
+  await fs.writeFile(path, content);
+}
 
 export function generateDays(numberOfDays = 14, from?: Date, to?: Date) {
   const days: Array<Date> = [];
@@ -31,6 +36,23 @@ export function generateDays(numberOfDays = 14, from?: Date, to?: Date) {
   return days;
 }
 
+export async function getCompany(id: string) {
+  try {
+    const data = await axios.get(
+      "https://api.timify.com/v1/booker-services/companies",
+      {
+        params: {
+          company_id: id,
+        },
+      },
+    );
+
+    return data.data;
+  } catch (e: any) {
+    console.log("Failed to get service data");
+  }
+}
+
 async function getAvailabilities(options: {
   company_id: string;
   service_id?: string;
@@ -50,12 +72,7 @@ async function getAvailabilities(options: {
       },
     );
 
-    if (data.status !== 200) {
-      console.log("Failed to get service data");
-      return;
-    }
-
-    return data.data?.data;
+    return data.data;
   } catch (e: any) {
     console.log("Failed to get service data");
   }
@@ -76,18 +93,20 @@ async function getAppointment(options: {
       },
     );
 
-    if (data.status !== 200) {
-      console.log("Failed to get appointemtn data");
-      return;
+    return data.data;
+  } catch (e: any) {
+    if (e?.response?.status === 401) {
+      throw e;
     }
 
-    return data.data?.data;
-  } catch (e: any) {
-    console.log("Failed to get appointemtn data");
+    console.log("Failed to get appointment data");
   }
 }
 
-async function getAllCompanyData(company: Company, companyRoot: string) {
+async function getAllCompanyData(
+  company: Record<string, any>,
+  companyRoot: string,
+) {
   const days = generateDays(7);
 
   // Process services
@@ -98,14 +117,12 @@ async function getAllCompanyData(company: Company, companyRoot: string) {
       days: days,
     });
 
-    console.log(service.name, `<<< service, ${company.data.companies[0].name}`);
-
-    await fs.writeFile(
+    await writeFile(
       path.join(
         companyRoot,
         "bookings",
         "services",
-        `${service.id}-${service.name}.json`,
+        `${service.id} - ${service.name}.json`,
       ),
       Buffer.from(JSON.stringify(data || {}, null, 4)),
     );
@@ -114,43 +131,35 @@ async function getAllCompanyData(company: Company, companyRoot: string) {
   // Process group services
   for (const groupService of company.data.companies[0].groupServices) {
     if (groupService.categoryId) {
+      // Course
       const data = await getAvailabilities({
         company_id: company.data.companies[0].id,
         course_id: groupService.id,
         days,
       });
 
-      console.log(
-        groupService.name,
-        `<<< groupService, ${company.data.companies[0].name}`,
-      );
-
-      await fs.writeFile(
+      await writeFile(
         path.join(
           companyRoot,
           "bookings",
           "courses",
-          `${groupService.id}-${groupService.name}.json`,
+          `${groupService.id} - ${groupService.name}.json`,
         ),
         Buffer.from(JSON.stringify(data || {}, null, 4)),
       );
     } else {
+      // Appointment
       const data = await getAppointment({
         company_id: company.data.companies[0].id,
         appointment_id: groupService.id,
       });
 
-      console.log(
-        groupService.name,
-        `<<< groupService, ${company.data.companies[0].name}`,
-      );
-
-      await fs.writeFile(
+      await writeFile(
         path.join(
           companyRoot,
           "bookings",
           "appointments",
-          `${groupService.id}-${groupService.name}.json`,
+          `${groupService.id} - ${groupService.name}.json`,
         ),
         Buffer.from(JSON.stringify(data || {}, null, 4)),
       );
@@ -158,9 +167,51 @@ async function getAllCompanyData(company: Company, companyRoot: string) {
   }
 }
 
-async function main() {
-  await getAllCompanyData(companyA, path.join(ROOT, "data", "company-a"));
-  await getAllCompanyData(companyB, path.join(ROOT, "data", "company-b"));
+async function main(companiesIDs: string[]) {
+  const ROOT = path.join(__dirname, "..");
+  const DATA_DIRECTORY_NAME = "data";
+
+  // Get companies data
+  const companiesData = (
+    await Promise.all(
+      companiesIDs.map(async (id) => {
+        return getCompany(id);
+      }),
+    )
+  ).filter((companyData) => companyData);
+
+  // Write companies to files
+  await Promise.all(
+    companiesData.map(async (companyData) => {
+      const companyName =
+        companyData?.data?.companies?.[0]?.name ||
+        companyData?.companies?.[0]?.id;
+      return writeFile(
+        path.join(
+          ROOT,
+          DATA_DIRECTORY_NAME,
+          `${companyName}`,
+          `${companyName}.json`,
+        ),
+        Buffer.from(JSON.stringify(companyData || {}, null, 4)),
+      );
+    }),
+  );
+
+  // Get bookings and write to files
+  await Promise.all(
+    companiesData.map(async (companyData) => {
+      const companyName =
+        companyData?.data?.companies?.[0]?.name ||
+        companyData?.data?.companies?.[0]?.id;
+      return getAllCompanyData(
+        companyData,
+        path.join(ROOT, DATA_DIRECTORY_NAME, companyName),
+      );
+    }),
+  );
 }
 
-main();
+const companiesIDs = ["65c39ebd07a04b9210cccb7b", "65ca2bb1c1020b3c67633b1a"];
+
+main(companiesIDs);
