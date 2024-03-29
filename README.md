@@ -95,7 +95,7 @@ Description:
 | TG  | DAY_APPOINTMENT                | appointment  |        |       | null      |             | 1        |         | true     | null    | 14              |
 | STG | CONNECTED_SERIAL_APPOINTMENT   | appointment  |        |       | != null   |             | 1...x    |         | true     | null    | 15              |
 | STS | CONNECTED_SERIAL_APPOINTMENT   | appointment  |        |       | != null   |             | 1...x    |         | true     | null    | 1               |
-| SRG | INDEPENDENT_SERIAL_APPOINTMENT | course       | 1      | 0     |           | 0           |          | != null |          |         | 15              |
+| SRG | INDEPENDENT_SERIAL_APPOINTMENT | course       | 1      | 1     |           | 1           |          | != null |          |         | 15              |
 | SRS | INDEPENDENT_SERIAL_APPOINTMENT | service      | 1...x  | 1...x |           |             |          |         |          | != null |                 |
 
 **A way define TimifyEventType:**
