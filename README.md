@@ -113,23 +113,23 @@ export enum TimifyEventType {
   INDEPENDENT_SERIAL_APPOINTMENT = "INDEPENDENT_SERIAL_APPOINTMENT",
 }
 
-export enum BookingType {
+export enum TimifyBookingType {
   SERVICE = "SERVICE",
   COURSE = "COURSE",
   APPOINTMENT = "APPOINTMENT",
 }
 
 export function defineTimifyEventType(
-  bookingType: BookingType,
+  bookingType: TimifyBookingType,
   data: Record<string, any>,
 ) {
-  if (bookingType === BookingType.SERVICE) {
+  if (bookingType === TimifyBookingType.SERVICE) {
     return TimifyEventType.INDEPENDENT_SERIAL_APPOINTMENT;
-  } else if (bookingType === BookingType.COURSE) {
+  } else if (bookingType === TimifyBookingType.COURSE) {
     return data?.groupEvents?.length === 1
       ? TimifyEventType.DAY_APPOINTMENT
       : TimifyEventType.INDEPENDENT_SERIAL_APPOINTMENT;
-  } else if (bookingType === BookingType.APPOINTMENT) {
+  } else if (bookingType === TimifyBookingType.APPOINTMENT) {
     return data?.recurring
       ? TimifyEventType.CONNECTED_SERIAL_APPOINTMENT
       : TimifyEventType.DAY_APPOINTMENT;
