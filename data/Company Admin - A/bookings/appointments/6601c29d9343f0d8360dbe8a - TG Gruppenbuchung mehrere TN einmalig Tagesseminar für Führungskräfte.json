@@ -1,0 +1,93 @@
+{
+    "data": {
+        "id": "6601c29d9343f0d8360dbe8a",
+        "externalId": "",
+        "type": "booking",
+        "title": "TG Gruppenbuchung mehrere TN einmalig Tagesseminar für Führungskräfte",
+        "notes": "booking data fields notes4",
+        "color": "#ebb65d",
+        "price": 0,
+        "date": "2024-04-03Z",
+        "duration": 240,
+        "durationBefore": 0,
+        "durationAfter": 0,
+        "durationsPattern": [
+            240
+        ],
+        "startDate": "2024-04-03T13:30:00Z",
+        "createdAt": "2024-03-25T18:29:49Z",
+        "createdBy": "Steven1 Strange",
+        "createdByUserId": "65f95e4428d1042df88046fc",
+        "createdByScope": "COMPANY",
+        "updatedAt": "2024-03-25T18:49:00Z",
+        "updatedBy": "Steven1 Strange",
+        "updatedByUserId": "65f95e4428d1042df88046fc",
+        "updatedByScope": "COMPANY",
+        "rescheduleUntil": "2024-04-02T13:30:00Z",
+        "reschedulingSecret": "cc391acc-fe0c-4bae-8703-af712baf5205",
+        "companyName": "Company Admin - A",
+        "timestamp": "1711392540795",
+        "isOnlineBooking": false,
+        "isBookable": true,
+        "isCourse": true,
+        "isPaidOnlineWithStripe": false,
+        "isPaidOnlineWithPaypal": false,
+        "hasNotifyCustomers": true,
+        "hasNotifyResources": false,
+        "maxParticipants": 14,
+        "participants": 0,
+        "customers": [],
+        "singleCustomers": [],
+        "customfields": [],
+        "resources": [
+            {
+                "id": "65e6d029d9d6e5c324d2cd65",
+                "externalId": "1077",
+                "name": "Department - A.B",
+                "email": "",
+                "category": {
+                    "id": "65e6da48abcab5a29f063b03",
+                    "externalId": "subscriptions",
+                    "internalId": "65e6da48abcab5a29f063aff",
+                    "orderIndex": 3,
+                    "name": "Subscriptions",
+                    "isDefault": false,
+                    "isDependency": false
+                }
+            }
+        ],
+        "serviceId": null,
+        "service": null,
+        "recurring": null,
+        "chainId": null,
+        "chainedEvents": [],
+        "isLastInTheChain": null,
+        "bookings": [
+            {
+                "id": "68d57a9ea71587a65cfbfa7b6a5d1a92",
+                "startDate": "2024-04-03T13:30:00Z",
+                "interval": {
+                    "begin": "2024-04-03T13:30:00Z",
+                    "end": "2024-04-03T17:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": null,
+                "duration": 240,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 240,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            }
+        ],
+        "tagIds": [],
+        "tags": [],
+        "combination": null,
+        "reservedUntil": null,
+        "metadata": {},
+        "scheduledForDeletionAt": null,
+        "enterpriseId": "65aea871f011c03363aefdb3"
+    },
+    "status": 1
+}

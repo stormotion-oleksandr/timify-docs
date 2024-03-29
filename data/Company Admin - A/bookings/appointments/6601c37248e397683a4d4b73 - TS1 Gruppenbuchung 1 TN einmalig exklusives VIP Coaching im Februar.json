@@ -1,0 +1,93 @@
+{
+    "data": {
+        "id": "6601c37248e397683a4d4b73",
+        "externalId": "",
+        "type": "booking",
+        "title": "TS1 Gruppenbuchung 1 TN einmalig exklusives VIP Coaching im Februar",
+        "notes": "booking data fields notes5",
+        "color": "#ebb65d",
+        "price": 0,
+        "date": "2024-04-04Z",
+        "duration": 30,
+        "durationBefore": 0,
+        "durationAfter": 0,
+        "durationsPattern": [
+            30
+        ],
+        "startDate": "2024-04-04T07:05:00Z",
+        "createdAt": "2024-03-25T18:33:23Z",
+        "createdBy": "Steven1 Strange",
+        "createdByUserId": "65f95e4428d1042df88046fc",
+        "createdByScope": "COMPANY",
+        "updatedAt": "2024-03-25T18:46:31Z",
+        "updatedBy": "Steven1 Strange",
+        "updatedByUserId": "65f95e4428d1042df88046fc",
+        "updatedByScope": "COMPANY",
+        "rescheduleUntil": "2024-04-03T07:05:00Z",
+        "reschedulingSecret": "19a60a30-a605-41ca-af2a-3a9ed8f58315",
+        "companyName": "Company Admin - A",
+        "timestamp": "1711392391262",
+        "isOnlineBooking": false,
+        "isBookable": true,
+        "isCourse": true,
+        "isPaidOnlineWithStripe": false,
+        "isPaidOnlineWithPaypal": false,
+        "hasNotifyCustomers": true,
+        "hasNotifyResources": false,
+        "maxParticipants": 1,
+        "participants": 0,
+        "customers": [],
+        "singleCustomers": [],
+        "customfields": [],
+        "resources": [
+            {
+                "id": "65e6d029d9d6e5c324d2cd65",
+                "externalId": "1077",
+                "name": "Department - A.B",
+                "email": "",
+                "category": {
+                    "id": "65e6da48abcab5a29f063b03",
+                    "externalId": "subscriptions",
+                    "internalId": "65e6da48abcab5a29f063aff",
+                    "orderIndex": 3,
+                    "name": "Subscriptions",
+                    "isDefault": false,
+                    "isDependency": false
+                }
+            }
+        ],
+        "serviceId": null,
+        "service": null,
+        "recurring": null,
+        "chainId": null,
+        "chainedEvents": [],
+        "isLastInTheChain": null,
+        "bookings": [
+            {
+                "id": "0fd6ed47938d077424f155ffe0642262",
+                "startDate": "2024-04-04T07:05:00Z",
+                "interval": {
+                    "begin": "2024-04-04T07:05:00Z",
+                    "end": "2024-04-04T07:35:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": null,
+                "duration": 30,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 30,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            }
+        ],
+        "tagIds": [],
+        "tags": [],
+        "combination": null,
+        "reservedUntil": null,
+        "metadata": {},
+        "scheduledForDeletionAt": null,
+        "enterpriseId": "65aea871f011c03363aefdb3"
+    },
+    "status": 1
+}

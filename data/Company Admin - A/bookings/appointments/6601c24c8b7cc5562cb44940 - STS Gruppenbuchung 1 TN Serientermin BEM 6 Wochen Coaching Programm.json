@@ -1,0 +1,191 @@
+{
+    "data": {
+        "id": "6601c24c8b7cc5562cb44940",
+        "externalId": "",
+        "type": "booking",
+        "title": "STS Gruppenbuchung 1 TN Serientermin BEM 6 Wochen Coaching Programm",
+        "notes": "booking data fields notes3",
+        "color": "#ebb65d",
+        "price": 22,
+        "date": "2024-04-02Z",
+        "duration": 150,
+        "durationBefore": 0,
+        "durationAfter": 0,
+        "durationsPattern": [
+            150
+        ],
+        "startDate": "2024-04-02T14:00:00Z",
+        "createdAt": "2024-03-25T18:28:28Z",
+        "createdBy": "Steven1 Strange",
+        "createdByUserId": "65f95e4428d1042df88046fc",
+        "createdByScope": "COMPANY",
+        "updatedAt": "2024-03-25T18:48:41Z",
+        "updatedBy": "Steven1 Strange",
+        "updatedByUserId": "65f95e4428d1042df88046fc",
+        "updatedByScope": "COMPANY",
+        "rescheduleUntil": "2024-04-01T14:00:00Z",
+        "reschedulingSecret": "32ce6006-a13d-4051-a294-d09713205f19",
+        "companyName": "Company Admin - A",
+        "timestamp": "1711392521604",
+        "isOnlineBooking": false,
+        "isBookable": true,
+        "isCourse": true,
+        "isPaidOnlineWithStripe": false,
+        "isPaidOnlineWithPaypal": false,
+        "hasNotifyCustomers": true,
+        "hasNotifyResources": false,
+        "maxParticipants": 1,
+        "participants": 0,
+        "customers": [],
+        "singleCustomers": [],
+        "customfields": [],
+        "resources": [
+            {
+                "id": "65e6d029d9d6e5c324d2cd65",
+                "externalId": "1077",
+                "name": "Department - A.B",
+                "email": "",
+                "category": {
+                    "id": "65e6da48abcab5a29f063b03",
+                    "externalId": "subscriptions",
+                    "internalId": "65e6da48abcab5a29f063aff",
+                    "orderIndex": 3,
+                    "name": "Subscriptions",
+                    "isDefault": false,
+                    "isDependency": false
+                }
+            }
+        ],
+        "serviceId": null,
+        "service": null,
+        "recurring": {
+            "timezone": "Europe/Berlin",
+            "frequency": "WEEKS",
+            "period": 1,
+            "weekDays": [
+                2
+            ],
+            "monthDays": [],
+            "yearMonths": [],
+            "repeatTimes": 6,
+            "repeatLastDay": null,
+            "maxDay": null,
+            "isFixedByRecurringDay": false
+        },
+        "chainId": null,
+        "chainedEvents": [],
+        "isLastInTheChain": null,
+        "bookings": [
+            {
+                "id": "5fb516136787ce532da51a70b1785969",
+                "startDate": "2024-04-02T14:00:00Z",
+                "interval": {
+                    "begin": "2024-04-02T14:00:00Z",
+                    "end": "2024-04-02T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-04-02",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            },
+            {
+                "id": "fd989e591b54697aab82d4b9d0b2a2b4",
+                "startDate": "2024-04-09T14:00:00Z",
+                "interval": {
+                    "begin": "2024-04-09T14:00:00Z",
+                    "end": "2024-04-09T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-04-09",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            },
+            {
+                "id": "2f8bae12f5e76f28c84c4286080b4494",
+                "startDate": "2024-04-16T14:00:00Z",
+                "interval": {
+                    "begin": "2024-04-16T14:00:00Z",
+                    "end": "2024-04-16T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-04-16",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            },
+            {
+                "id": "566fc110c828dfd2f25b1f43853db1c8",
+                "startDate": "2024-04-23T14:00:00Z",
+                "interval": {
+                    "begin": "2024-04-23T14:00:00Z",
+                    "end": "2024-04-23T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-04-23",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            },
+            {
+                "id": "82c1a1c8426513ded76788cf1e24cea9",
+                "startDate": "2024-04-30T14:00:00Z",
+                "interval": {
+                    "begin": "2024-04-30T14:00:00Z",
+                    "end": "2024-04-30T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-04-30",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            },
+            {
+                "id": "46128e85b6d36e3f7f56a93bbe81e4b5",
+                "startDate": "2024-05-07T14:00:00Z",
+                "interval": {
+                    "begin": "2024-05-07T14:00:00Z",
+                    "end": "2024-05-07T16:30:00Z"
+                },
+                "batchNumber": 0,
+                "isFirstBatch": true,
+                "isLastBatch": true,
+                "recurringDay": "2024-05-07",
+                "duration": 150,
+                "durationBefore": 0,
+                "durationAfter": 0,
+                "durationTotal": 150,
+                "resourceId": "65e6d029d9d6e5c324d2cd65"
+            }
+        ],
+        "tagIds": [],
+        "tags": [],
+        "combination": null,
+        "reservedUntil": null,
+        "metadata": {},
+        "scheduledForDeletionAt": null,
+        "enterpriseId": "65aea871f011c03363aefdb3"
+    },
+    "status": 1
+}
