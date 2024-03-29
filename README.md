@@ -98,7 +98,7 @@ Description:
 | SRG | INDEPENDENT_SERIAL_APPOINTMENT | course       | 1      | 1     |           | 1           |          | != null |          |         | 15              |
 | SRS | INDEPENDENT_SERIAL_APPOINTMENT | service      | 1...x  | 1...x |           |             |          |         |          | != null |                 |
 
-**A way define TimifyEventType:**
+**How to define TimifyEventType:**
 
 - service: `INDEPENDENT_SERIAL_APPOINTMENT`
 - course: `groupEvents[0].maxParticipants === 1 ? DAY_APPOINTMENT : INDEPENDENT_SERIAL_APPOINTMENT`
