@@ -911,22 +911,6 @@
                         "hasOnlinePayment": false,
                         "discount": null,
                         "categoryId": null
-                    },
-                    {
-                        "id": "65e6df9f99ae5ef3170ec602",
-                        "name": "Course - B.B.1",
-                        "color": "#b26492",
-                        "description": null,
-                        "duration": 60,
-                        "price": 0,
-                        "isPaymentMandatory": false,
-                        "isTitle": true,
-                        "externalId": null,
-                        "maxParticipants": 50,
-                        "extraPersonsPerParticipant": 0,
-                        "hasOnlinePayment": false,
-                        "discount": null,
-                        "categoryId": null
                     }
                 ],
                 "onlineSettings": {
